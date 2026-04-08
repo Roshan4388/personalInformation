@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roshan Timalsina</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prrsonal protfolio</title>
 </head>
 <body>
-
-<header>
-<nav>
-<h2>Roshan</h2>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-<section id="home">
-<div class="intro">
-<h1>Roshan Timalsina</h1>
-<p>Developer • Student • Gaming Enthusiast</p>
-<a href="#contact" class="btn">Hire Me</a>
-</div>
+   <header>
+    <h1>Roshan Timalsina</h1>
+    <p><i>student / programmer </i></p>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#education">education</a>
+        <a href="exprience">exprience</a>
+        <a href="skills">skills</a>
+        <a href="gallery">gallery</a>
+        <a href="contact">contact</a>
+    </nav>
+   </header> 
+   <section id="home">
+    <h1>Home</h1>
+    <p>hello! I am <b>Roshan Timalsina</b>.I love <i>programming</i> and <u>technology</u>.Welcome to my <mark>Personal protfolio</mark></p>
+   </section>
+   <section id="about">
+    <h1>About me</h1>
+    <p>I am a motivated student intrested in software develpoment and problem solving. I enjoy building project and learning new technology</p>
+   </section>
+   <section id="education">
+    <h2>education</h2>
+    <table>
+        <tr>
+            <th>level</th>
+            <th>instution</th>
+            <th>status</th>
+        </tr>
+        <tr>
+            <td>+2</td>
+            <td>Banepa Nist College</td>
+            <td>completed</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>NIST College</td>
+            <td>third semester</td>
+        </tr>
+    </table>
+   </section>
+   <section id="exprience">
+    <h2>Exprience</h2>
+    <h2>hackathon</h2>
+    <table>
+        <tr>
+            <th>Role</th>
+            <th>Organization</th>
+            <th>duration</th>
+            <tr>
+                <td>frontend developer and idea creation</td>
+                <td>NIST College</td>
+                <td>2024-2025</td>
+                <tr>
+                    <td>frontend developer and ui/ux designer </td>
+                    <td>NIST College</td>
+                    <td>2025-2026</td>
+                </tr>
+            </tr>
+        </tr>
+    </table>
 </section>
-
-<section id="about">
-<div class="box">
-<img src="https://via.placeholder.com/350" class="profile">
-<div class="text">
-<h2>About Me</h2>
-<p>I am Roshan Timalsina from Nepal, passionate about software, gaming, coding, and innovation. I love learning new technologies and turning ideas into working products. Currently, I am studying MCA and developing multiple projects in C, Java, and web development.</p>
-</div>
-</div>
-</section>
-
 <section id="skills">
-<h2>Skills</h2>
-<table>
-<tr><th>Skill</th><th>Level</th></tr>
-<tr><td>C Programming</td><td>Advanced</td></tr>
-<tr><td>HTML & CSS</td><td>Advanced</td></tr>
-<tr><td>Java</td><td>Intermediate</td></tr>
-<tr><td>JavaScript</td><td>Intermediate</td></tr>
-<tr><td>Gaming Development</td><td>Intermediate</td></tr>
-</table>
+    <h2>skills</h2>
+    <div class="skill-box">
+        <b>C programming</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:80%"></div>
+        </div>
+    </div>
+     <div class="skill-box">
+        <b>JAVA</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:70%"></div>
+        </div>
+         <div class="skill-box">
+        <b>HTML & CSS</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:85%"></div>
+        </div>
+         <div class="skill-box">
+        <b>PROTEUS</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:70%"></div>
+        </div>
+         <div class="skill-box">
+        <b>XML</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:85%"></div>
+        </div>
+         <div class="skill-box">
+        <b>DSA</b>
+        <div class="skill-bar">
+            <div class="skill-level" style="width:65%"></div>
+        </div>
 </section>
-
-<section id="projects">
-<h2>My Projects</h2>
-<div class="grid">
-<div class="card">
-<img src="https://via.placeholder.com/500x300">
-<h3>Banking System (Java)</h3>
-<p>A console-based application performing deposit, withdraw, and balance check functions.</p>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/500x300">
-<h3>Data Pack Simulator</h3>
-<p>A Java program simulating telecom data recharge and pack management.</p>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/500x300">
-<h3>C Programming Console Games</h3>
-<p>Snake, Tic-Tac-Toe and guessing games created using basic C logic.</p>
-</div>
-</div>
-</section>
-
 <section id="contact">
-<h2>Contact Me</h2>
-<form onsubmit="return validate()">
-<input type="text" id="name" placeholder="Your Name">
-<input type="email" id="email" placeholder="Your Email">
-<textarea id="msg" placeholder="Message"></textarea>
-<button type="submit" class="btn">Send</button>
-</form>
+    <h2>Contact Me</h2>
+    <form>
+        <label>name</label>
+        <input type="text" required>
+        <label></label>Email</label>
+        <input type="Email" required>
+        <label>message</label>
+        <textarea rows="4" required></textarea>
+        <button type="submit">send message</button>
+    </form>
 </section>
-
 <footer>
-<p>© 2025 Roshan Timalsina</p>
+    <p>&copy; 2026 Roshan Timalsina</p>
 </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
