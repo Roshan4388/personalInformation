@@ -1,122 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roshan Timalsina</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to my personal portfolio</h1> 
-        <h1>Hi, I'm Roshan Timalsina</h1>   
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#education">Education</a></li>
 
-            </ul>
-        </nav>   
-    </header>
+<header>
+<nav>
+<h2>Roshan</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
-        </div>
-    </section>
+<section id="home">
+<div class="intro">
+<h1>Roshan Timalsina</h1>
+<p>Developer • Student • Gaming Enthusiast</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+</section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>[Add more skills]</li>
-            </ul>
-        </div>
-    </section>
+<section id="about">
+<div class="box">
+<img src="https://via.placeholder.com/350" class="profile">
+<div class="text">
+<h2>About Me</h2>
+<p>I am Roshan Timalsina from Nepal, passionate about software, gaming, coding, and innovation. I love learning new technologies and turning ideas into working products. Currently, I am studying MCA and developing multiple projects in C, Java, and web development.</p>
+</div>
+</div>
+</section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </div>
-        </div>
-    </section>
+<section id="skills">
+<h2>Skills</h2>
+<table>
+<tr><th>Skill</th><th>Level</th></tr>
+<tr><td>C Programming</td><td>Advanced</td></tr>
+<tr><td>HTML & CSS</td><td>Advanced</td></tr>
+<tr><td>Java</td><td>Intermediate</td></tr>
+<tr><td>JavaScript</td><td>Intermediate</td></tr>
+<tr><td>Gaming Development</td><td>Intermediate</td></tr>
+</table>
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-        </div>
-    </section>
+<section id="projects">
+<h2>My Projects</h2>
+<div class="grid">
+<div class="card">
+<img src="https://via.placeholder.com/500x300">
+<h3>Banking System (Java)</h3>
+<p>A console-based application performing deposit, withdraw, and balance check functions.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/500x300">
+<h3>Data Pack Simulator</h3>
+<p>A Java program simulating telecom data recharge and pack management.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/500x300">
+<h3>C Programming Console Games</h3>
+<p>Snake, Tic-Tac-Toe and guessing games created using basic C logic.</p>
+</div>
+</div>
+</section>
 
-    <section id="resume">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>Download my resume <a href="#">here</a>.</p>
-        </div>
-    </section>
+<section id="contact">
+<h2>Contact Me</h2>
+<form onsubmit="return validate()">
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea id="msg" placeholder="Message"></textarea>
+<button type="submit" class="btn">Send</button>
+</form>
+</section>
 
-    <section id="certificates">
-        <div class="container">
-            <h2>Certificates</h2>
-            <ul>
-                <li>Hackathon Certificate 1 - Description</li>
-                <li>Hackathon Certificate 2 - Description</li>
-                <li>[Add more certificates]</li>
-            </ul>
-        </div>
-    </section>
+<footer>
+<p>© 2025 Roshan Timalsina</p>
+</footer>
 
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Job Title 1</h3>
-                <p>Company Name | Dates</p>
-                <p>Description of experience.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Job Title 2</h3>
-                <p>Company Name | Dates</p>
-                <p>Description of experience.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <img src="image1.jpg" alt="Project Screenshot 1">
-                <img src="image2.jpg" alt="Project Screenshot 2">
-                <img src="image3.jpg" alt="Personal">
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Roshan Timalsina. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="index.js"></script>
+<script src="script.js"></script>
+</body>
 </html>

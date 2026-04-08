@@ -1,9 +1,11 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+function validate(){
+let n=document.getElementById("name").value
+let e=document.getElementById("email").value
+let m=document.getElementById("msg").value
+if(n==""||e==""||m==""){
+alert("Please fill all fields")
+return false
+}
+alert("Message Sent")
+return true
+}
