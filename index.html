@@ -3,118 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prrsonal protfolio</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
    <header>
     <h1>Roshan Timalsina</h1>
-    <p><i>student / programmer </i></p>
+    <p><i>Student / Programmer</i></p>
     <nav>
-        <a href="#Home">Home</a>
-        <a href="#education">education</a>
-        <a href="exprience">exprience</a>
-        <a href="skills">skills</a>
-        <a href="gallery">gallery</a>
-        <a href="contact">contact</a>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#exprience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
     </nav>
    </header> 
    <section id="home">
     <h1>Home</h1>
-    <p>hello! I am <b>Roshan Timalsina</b>.I love <i>programming</i> and <u>technology</u>.Welcome to my <mark>Personal protfolio</mark></p>
+    <p>Hello! I am <b>Roshan Timalsina</b>. I love <i>programming</i> and <u>technology</u>. Welcome to my <mark>Personal Portfolio</mark></p>
    </section>
    <section id="about">
-    <h1>About me</h1>
-    <p>I am a motivated student intrested in software develpoment and problem solving. I enjoy building project and learning new technology</p>
+    <h1>About Me</h1>
+    <p>I am a motivated student interested in software development and problem solving. I enjoy building projects and learning new technologies.</p>
    </section>
    <section id="education">
-    <h2>education</h2>
+    <h2>Education</h2>
     <table>
         <tr>
-            <th>level</th>
-            <th>instution</th>
-            <th>status</th>
+            <th>Level</th>
+            <th>Institution</th>
+            <th>Status</th>
         </tr>
         <tr>
             <td>+2</td>
-            <td>Banepa Nist College</td>
-            <td>completed</td>
+            <td>Banepa NIST College</td>
+            <td>Completed</td>
         </tr>
         <tr>
             <td>BCA</td>
             <td>NIST College</td>
-            <td>third semester</td>
+            <td>Third Semester</td>
         </tr>
     </table>
    </section>
    <section id="exprience">
-    <h2>Exprience</h2>
-    <h2>hackathon</h2>
+    <h2>Experience</h2>
+    <h3>Hackathon</h3>
     <table>
         <tr>
             <th>Role</th>
             <th>Organization</th>
-            <th>duration</th>
-            <tr>
-                <td>frontend developer and idea creation</td>
-                <td>NIST College</td>
-                <td>2024-2025</td>
-                <tr>
-                    <td>frontend developer and ui/ux designer </td>
-                    <td>NIST College</td>
-                    <td>2025-2026</td>
-                </tr>
-            </tr>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>Frontend developer and idea creation</td>
+            <td>NIST College</td>
+            <td>2024-2025</td>
+        </tr>
+        <tr>
+            <td>Frontend developer and UI/UX designer</td>
+            <td>NIST College</td>
+            <td>2025-2026</td>
         </tr>
     </table>
 </section>
+   <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Gallery content coming soon...</p>
+   </section>
 <section id="skills">
-    <h2>skills</h2>
+    <h2>Skills</h2>
     <div class="skill-box">
-        <b>C programming</b>
+        <b>C Programming</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:80%"></div>
         </div>
     </div>
-     <div class="skill-box">
-        <b>JAVA</b>
+    <div class="skill-box">
+        <b>Java</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:70%"></div>
         </div>
-         <div class="skill-box">
+    </div>
+    <div class="skill-box">
         <b>HTML & CSS</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:85%"></div>
         </div>
-         <div class="skill-box">
-        <b>PROTEUS</b>
+    </div>
+    <div class="skill-box">
+        <b>Proteus</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:70%"></div>
         </div>
-         <div class="skill-box">
+    </div>
+    <div class="skill-box">
         <b>XML</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:85%"></div>
         </div>
-         <div class="skill-box">
+    </div>
+    <div class="skill-box">
         <b>DSA</b>
         <div class="skill-bar">
             <div class="skill-level" style="width:65%"></div>
         </div>
+    </div>
 </section>
 <section id="contact">
     <h2>Contact Me</h2>
-    <form>
-        <label>name</label>
-        <input type="text" required>
-        <label></label>Email</label>
-        <input type="Email" required>
-        <label>message</label>
-        <textarea rows="4" required></textarea>
-        <button type="submit">send message</button>
+    <form onsubmit="return validate()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="msg">Message:</label>
+        <textarea id="msg" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
 </section>
 <footer>
-    <p>&copy; 2026 Roshan Timalsina</p>
+    <p>&copy; 2026 Roshan Timalsina. All rights reserved.</p>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
